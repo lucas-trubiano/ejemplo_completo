@@ -1,0 +1,101 @@
+{% extends 'dashboard/base_account.html' %}
+
+{% load static %}
+
+{% block titulo %}
+Iniciar Sesión
+{% endblock %}
+
+{% block content %}
+<br><br><br>
+<!-- Outer Row -->
+<div class="row justify-content-center">
+
+    <div class="col-xl-6 col-lg-6 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row d-flex justify-content-center">
+                    <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                    <div class="col-lg-10">
+                        <div class="px-5 pt-5 pb-2">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">¡Te damos la Bienvenida!</h1>
+                            </div>
+                            <div>
+                                {% for message in messages %}
+                                    <p class="alert alert-danger">{{message}}</p>
+                                {% endfor %}
+                            </div>
+                            <form class="user" method="post">
+                                {% csrf_token %}
+
+                                <div class="form-group">
+                                    <input
+                                        type="email"
+                                        name="username"
+                                        id="exampleInputEmail id_username"
+                                        class="form-control form-control-user"
+                                        aria-describedby="emailHelp"
+                                        placeholder="Email"
+                                        autofocus=""
+                                        autocapitalize="none"
+                                        autocomplete="username"
+                                        maxlength="254"
+                                        required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        id="exampleInputPassword id_password"
+                                        class="form-control form-control-user"
+                                        placeholder="Contraseña"
+                                        autocomplete="current-password"
+                                        required="">
+                                    
+                                </div>
+
+                                <!-- <div class="form-group">
+                                    <div class="custom-control custom-checkbox small">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                                        <label class="custom-control-label" for="customCheck">
+                                            Recordarme
+                                        </label>
+                                    </div>
+                                </div> -->
+
+                                <button class="btn btn-primary btn-user btn-block" type="submit">
+                                    Iniciar Sesión
+                                </button>
+                                
+                                <!-- <hr>
+                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Login with Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                                </a> -->
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">Recuperar Contraseña?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="{% url 'register' %}">No tenés cuenta? Registrate!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-4 my-2">
+                    <a href="{% url 'home' %}"><i class="bi bi-arrow-left-circle"></i> Volver</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

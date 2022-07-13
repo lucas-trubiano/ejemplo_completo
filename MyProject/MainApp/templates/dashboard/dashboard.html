@@ -1,0 +1,22 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+<!-- Custom styles for this page -->
+<link href="{% static 'dashboard/vendor/datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+
+{% block scripts %}
+<!-- Page level plugins -->
+<script src="{% static 'dashboard/vendor/datatables/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'dashboard/vendor/datatables/dataTables.bootstrap4.min.js' %}"></script>
+
+<!-- Page level custom scripts -->
+<script src="{% static 'dashboard/js/demo/datatables-demo.js' %}"></script>
+{% endblock %}

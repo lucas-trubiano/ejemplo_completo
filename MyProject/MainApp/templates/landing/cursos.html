@@ -1,0 +1,236 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page Content-->
+
+<!-- Mashead header-->
+<header class="masthead">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <!-- Mashead text and app badges-->
+                <div class="mb-5 mb-lg-0 text-center">
+                    <h1 class="mb-3"><b>¡Nuestros Cursos!</b></h1>
+                    <p class="lead fw-normal text-muted mb-5">Vení y formate con los mejores profesionales de la industria y los que le ponen la mejor onda wee!!</p>
+                    
+                    <div class="d-flex pe-3 justify-content-center">
+                        <a href="{% url 'register' %}" class="btn btn-outline-primary rounded-pill px-3 mb-2 mb-lg-0 mx-2 ">
+                            <span class="d-flex align-items-center">
+                                <span>Conocer más</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Masthead device mockup feature-->
+                <div class="masthead-device-mockup">
+                    <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                <stop class="gradient-start-color" offset="0%"></stop>
+                                <stop class="gradient-end-color" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+                    </svg>
+                    <svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    
+                    <div class="ps-5" style="z-index: 10;">
+                        <img src="https://cdn3d.iconscout.com/3d/free/thumb/python-5562371-4642716.png" alt="" srcset="" style="max-width: 70%; height: 70%; margin-left: 2rem">
+                    </div>
+
+                    {% comment %}
+                    <div class="device-wrapper">
+                        <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                            <div class="screen bg-black">
+                                <!-- PUT CONTENTS HERE:-->
+                                <!-- * * This can be a video, image, or just about anything else.-->
+                                <!-- * * Set the max width of your media to 100% and the height to-->
+                                <!-- * * 100% like the demo example below.-->
+                                <!-- <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="{% static 'landing/assets/img/demo-screen.mp4' %}" type="video/mp4" /></video> -->
+                            </div>
+                        </div>
+                    </div>
+                    {% endcomment %}
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% comment %}
+<!-- App features section-->
+<section id="features">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                <div class="container-fluid px-5">
+                    <div class="row gx-5">
+                        <div class="col-md-6 mb-5">
+                            <!-- Feature item-->
+                            <div class="text-center">
+                                <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
+                                <h3 class="font-alt">Device Mockups</h3>
+                                <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <!-- Feature item-->
+                            <div class="text-center">
+                                <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
+                                <h3 class="font-alt">Flexible Use</h3>
+                                <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-5 mb-md-0">
+                            <!-- Feature item-->
+                            <div class="text-center">
+                                <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
+                                <h3 class="font-alt">Free to Use</h3>
+                                <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Feature item-->
+                            <div class="text-center">
+                                <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
+                                <h3 class="font-alt">Open Source</h3>
+                                <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 order-lg-0">
+                <!-- Features section device mockup-->
+                <div class="features-device-mockup">
+                    <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                <stop class="gradient-start-color" offset="0%"></stop>
+                                <stop class="gradient-end-color" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="50"></circle></svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <div class="device-wrapper">
+                        <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                            <div class="screen bg-black">
+                                <!-- PUT CONTENTS HERE:-->
+                                <!-- * * This can be a video, image, or just about anything else.-->
+                                <!-- * * Set the max width of your media to 100% and the height to-->
+                                <!-- * * 100% like the demo example below.-->
+                                <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="{% static 'landing/assets/img/demo-screen.mp4' %}" type="video/mp4" /></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endcomment %}
+
+<br><br>
+
+<nav aria-label="Page navigation example d-flex justify-content-center">
+    
+    <p class="text-center">Categorías</p>
+
+    <ul class="pagination pagination-blog justify-content-center">
+        <li class="page-item {% if filtered == 'all' %}active{% endif %}">
+            <a class="page-link" href="{% url 'cursos' %}">Todos</a>
+        </li>
+        {% for category in categories %}
+        <li class="page-item {% if filtered == category.id %}active{% endif %}">
+            <a class="page-link" href="{% url 'cursos_categoria' category.id %}">{{ category.nombre }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+<section class="bg-white py-2">
+    <div class="container  px-5">
+        <div class="row row-cols-3 gx-5 mb-5">
+
+            {% for curso in cursos %}
+            <div class="col col-lg-4 mb-5">
+                <div class="card lift h-100" href="#!">
+
+                    {% if curso.imagen %}
+                        <img class="card-img-top" src="{{curso.imagen.url}}" alt="...">
+                    {% else %}
+                        <!-- <img src="{% static 'landing/assets/img/cursos/default.jpg' %}" class="card-img-top" alt="..."> -->
+                    {% endif %}
+
+                    <div class="card-body">
+                        <h4 class="card-title mb-2">{{curso.nombre}}</h4>
+                        {% if curso.descripcion %}
+                            <p class="card-text">{{curso.descripcion}}</p>
+                        {% else %}
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequuntur. Blanditiis earum nostrum ipsa fuga tempore ab soluta dolores voluptatum.</p>
+                        {% endif %}
+                    </div>
+                    <a class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between" href="#">
+                        <div class="small text-primary text-decoration-none">Ver</div>
+                        <div class="small text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+{% comment %}
+<nav aria-label="Page navigation example">
+    <ul class="pagination pagination-blog justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#!" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+            </a>
+        </li>
+        <li class="page-item active">
+            <a class="page-link" href="#!">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#!">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#!">3</a>
+        </li>
+        <li class="page-item disabled">
+            <a class="page-link" href="#!">...</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#!">12</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#!" aria-label="Next">
+                <span aria-hidden="true">»</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+{% endcomment %}
+
+
+{% endblock %}
